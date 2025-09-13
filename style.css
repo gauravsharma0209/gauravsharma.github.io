@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+    background: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: #00adb5;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #222;
+}
+
+/* Pages */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Home Page */
+#home {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: #f4f4f4;
+}
+
+#home img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#home h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* About Page */
+.about-left {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.about-left img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.about-right {
+    width: 65%;
+    float: right;
+}
+
+.skill-badges span {
+    display: inline-block;
+    background: #00adb5;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* Contact Page */
+.contact-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #00adb5;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+    background: #007b7b;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
