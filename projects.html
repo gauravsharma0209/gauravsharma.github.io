@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Gaurav Sharma</title>
+  <title>Projects (Last 5 years) | Gaurav Sharma</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,19 +18,44 @@
 </header>
 
 <div class="container">
+  <!-- Watchtower -->
   <div class="project-card">
-    <h3>Big Data ETL Pipeline</h3>
-    <p>Built a scalable ETL pipeline using Python, AWS Glue, and Apache Airflow to process terabytes of data daily.</p>
-    <p><strong>Tech:</strong> Python, AWS Glue, Airflow, SQL, Iceberg</p>
+    <h3>Watchtower - Data Observability & Analytics Platform | 2024-Present</h3>
+    <ul>
+      <li>Architected data observability platform processing 100M+ events daily across GenAI programs using AWS Glue, Kinesis, Apache Airflow, Apache Iceberg.</li>
+      <li>Designed standardized schema aggregating ASIN attributes, asset metadata, and business metrics across programs.</li>
+      <li>Implemented QuickSight dashboards & AI-powered query generator providing self-service analytics for PMs.</li>
+      <li>Worked with scientists to choose right model parameters for POC using Difference-in-Differences models for asset performance attribution.</li>
+    </ul>
+    <p><strong>Tech:</strong> AWS Glue, Kinesis, Apache Airflow, Apache Iceberg, Python, QuickSight, AI Prompting</p>
   </div>
-  
+
+  <!-- Private Brands Central -->
   <div class="project-card">
-    <h3>AI Prompting System</h3>
-    <p>Developed an AI-powered system to generate intelligent prompts for business insights using Python and LLMs.</p>
-    <p><strong>Tech:</strong> Python, AI Prompting, AWS, SQL</p>
+    <h3>Private Brands Central (PBC) - Automated ASIN Creation Platform | 2021-2023</h3>
+    <ul>
+      <li>Led technical architecture for Retail Catalog integration, reducing ASIN creation time from 14 days to 3 days.</li>
+      <li>Designed validation framework with transformation layer between PBC UMP and Contribution namespaces.</li>
+      <li>Built asynchronous CC API integration replacing manual Excel-based tools for EU SPB teams.</li>
+      <li>Coordinated with multiple engineering teams for ambiguous requirements.</li>
+    </ul>
+    <p><strong>Tech:</strong> Java, Python, Spring Boot, AWS Lambda, AWS Glue, ECS Fargate, DynamoDB, Step Functions, REST APIs</p>
   </div>
-  
-  <!-- Add more project cards as needed -->
+
+  <!-- Vendor Appointment Scheduling -->
+  <div class="project-card">
+    <h3>Vendor Appointment Scheduling (VAS) - Multi-Phase Platform | 2018-2020</h3>
+    <ul>
+      <li>Architected 4-phase scheduling platform for 59 fulfillment centers, achieving 97-98% coverage and reducing no-shows from 20% to 3.6%.</li>
+      <li>Designed event streaming platform consolidating PO, ASN, IDS, FBA events into unified datastore using DynamoDB/Elasticsearch.</li>
+      <li>Implemented replay-able event store with versioning for testing, backfill, and throttling elimination.</li>
+      <li>Led latency optimization reducing P99 responses by 70% using Java CompletableFuture concurrency.</li>
+      <li>Delivered $4MM+ cost savings and won IN-Tech 'Circle of Excellence' award.</li>
+    </ul>
+    <p><strong>Tech:</strong> Java, DynamoDB, Elasticsearch, Event Streaming, Microservices</p>
+  </div>
+
+  <!-- Optional: Add more projects from your earlier experience -->
 </div>
 
 </body>
