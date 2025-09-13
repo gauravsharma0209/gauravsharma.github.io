@@ -1,0 +1,286 @@
+<!-- Gaurav Sharma Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #00adb5;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #222;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #00adb5;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Home */
+    #home {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    #home h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* About */
+    #about .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    /* Projects */
+    .project-card {
+      margin: 0 auto 40px;
+      max-width: 800px;
+      padding: 25px;
+      border-radius: 12px;
+      background: #f9f9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    .project-card:nth-child(1) { animation-delay: 0.2s; }
+    .project-card:nth-child(2) { animation-delay: 0.4s; }
+    .project-card:nth-child(3) { animation-delay: 0.6s; }
+    .project-card:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .project-date {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .project-details {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .project-details li {
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .project-details li::before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      color: #00adb5;
+      font-weight: bold;
+    }
+
+    /* Contact */
+    #contact .container {
+      width: 90%;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      background: #00adb5;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    #contact a:hover {
+      background: #007d82;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gaurav Sharma</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Hi, I'm Gaurav Sharma 👋</h2>
+    <p>A Senior Software Engineer with 13+ years of expertise in scalable distributed systems, cloud-native platforms, Big Data ETL, and AI prompting. Passionate about building impactful software that powers businesses and transforms customer experiences.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="container">
+      <p>
+        With extensive experience at Amazon, Barclays, and Winshuttle, I specialize in architecting large-scale distributed systems, data platforms, and mentoring teams. My toolkit includes Java, AWS, Python, SQL, React, Microservices, ETL pipelines, Apache Airflow, Iceberg, Glue, and AI prompt engineering.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="container">
+      <div class="project-card">
+        <h3 class="project-title">Watchtower - Data Observability & Analytics Platform</h3>
+        <p class="project-date">2024 – Present</p>
+        <ul class="project-details">
+          <li>Architected a platform processing 100M+ events daily across GenAI programs.</li>
+          <li>Standardized schemas aggregating ASIN attributes, asset metadata, and business metrics.</li>
+          <li>Built QuickSight dashboards & AI-powered query generator for PM self-service analytics.</li>
+          <li><strong>Technologies:</strong> AWS Glue, Kinesis, Apache Airflow, Apache Iceberg, SQL, Python, AI Prompt Engineering</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">Private Brands Central (PBC) - Automated ASIN Creation Platform</h3>
+        <p class="project-date">2021 – 2023</p>
+        <ul class="project-details">
+          <li>Reduced ASIN creation time from 14 days to 3 days with automated catalog integration.</li>
+          <li>Designed validation framework with transformation layer between namespaces.</li>
+          <li>Built async CC API replacing Excel-based tools, streamlining EU workflows.</li>
+          <li><strong>Technologies:</strong> Java, AWS Lambda, Spring Boot, DynamoDB, SQL, Microservices</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">Vendor Appointment Scheduling (VAS) - Multi-Phase Platform</h3>
+        <p class="project-date">2018 – 2020</p>
+        <ul class="project-details">
+          <li>Architected scheduling platform for 59 fulfillment centers with 97–98% coverage.</li>
+          <li>Reduced no-shows from 20% to 3.6% and improved P99 latency by 70%.</li>
+          <li>Delivered $4M+ cost savings; awarded Amazon IN-Tech 'Circle of Excellence'.</li>
+          <li><strong>Technologies:</strong> Java, DynamoDB, Elasticsearch, EventBridge, SQL, CompletableFuture</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">Cross-Functional Impact & Innovation</h3>
+        <p class="project-date">Ongoing</p>
+        <ul class="project-details">
+          <li>Won internal Amazon hackathon with innovative productionized solution.</li>
+          <li>Led initiatives reducing DIG waste by 40% ($34K savings) with data-driven dashboards.</li>
+          <li>Mentored engineers on design reviews, operational excellence, and AI prompting techniques.</li>
+          <li><strong>Technologies:</strong> AWS, Java, Python, React, SQL, CI/CD, AI Prompting</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="container">
+      <p>Interested in working together or discussing opportunities? Let’s connect!</p>
+      <a href="mailto:gauravorgrs@gmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/gaurav-sharma-04a65933/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/gauravsharma" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Gaurav Sharma. All rights reserved.</p>
+  </footer>
+</body>
+</html>
