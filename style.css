@@ -122,3 +122,32 @@ header nav a:hover {
     display: table;
     clear: both;
 }
+
+#skills {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #00adb5;
+}
+
+.skill-badges span {
+    display: inline-block;
+    background: #00adb5;
+    color: white;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.skill-badges span:hover {
+    background: #007b7b;
+    cursor: default;
+}
+
